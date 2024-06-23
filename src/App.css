@@ -1,0 +1,60 @@
+.App {
+  border: 1px solid #3d3d3d;
+  padding: 25px 15px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.to-do-container ul li {
+  margin: 0px 20px;
+  width: auto;
+  overflow-wrap: break-word;
+  list-style-type: disc;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+  .App {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .App {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    width: 40%;
+  }
+}
